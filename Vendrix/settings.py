@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
+    'django_filters'
 ]
 
 LOCAL_APPS = [
@@ -162,7 +163,6 @@ REST_FRAMEWORK = {
         'rest_framework.parsers.FormParser',
     ],
 }
-
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
@@ -188,3 +188,5 @@ SIMPLE_JWT = {
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
 }
+
+AUTH_USER_MODEL = 'accounts.User'
