@@ -32,6 +32,13 @@ class User(AbstractUser):
     updated_at = models.DateTimeField(auto_now=True)
     is_active = models.BooleanField(default=True)
 
+    ROLE_CHOICES = (
+        ('buyer', 'Buyer'),
+        ('seller', 'Seller'),
+    )
+
+    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='buyer')
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
