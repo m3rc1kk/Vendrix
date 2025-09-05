@@ -52,6 +52,7 @@ LOCAL_APPS = [
     'apps.main.apps.MainConfig',
     'apps.cart.apps.CartConfig',
     'apps.orders.apps.OrdersConfig',
+    'apps.payment.apps.PaymentConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -199,3 +200,7 @@ SIMPLE_JWT = {
 }
 
 AUTH_USER_MODEL = 'accounts.User'
+
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_WEBHOOK_SECRET = config('STRIPE_WEBHOOK_SECRET')
+#stripe listen --forward-to localhost:8000/payment/stripe/webhook/

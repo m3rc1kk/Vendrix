@@ -1,0 +1,24 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-dark: #00234C;
+  --color-accent: #2F80DD;
+  --color-red: #DD2F32;
+
+  --border-radius-small: 8px;
+  --border-radius: 16px;
+
+  --border-input: 1px solid rgba(0, 35, 76, .2);
+  --border-button: 1px solid var(--color-accent);
+
+  --font-family: 'Lufga', sans-serif;
+  --font-family-accent: 'Luxurious', sans-serif;
+
+  --container-big-width: 1800px;
+  --container-small-width: 1520px;
+  --container-padding-x: 16px;
+
+  --input-height: 45px;
+  --button-height: 48px;
+
+  --transition-duration: .2s;
+}
