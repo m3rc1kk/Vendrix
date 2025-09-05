@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-inline: 28px;
+  height: var(--button-height);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  @include hover {
+    background-color: var(--color-dark);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: var(--border-button);
+  }
+}

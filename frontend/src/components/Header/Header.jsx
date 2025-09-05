@@ -43,7 +43,7 @@ export default function Header() {
 
                         <div className="header__sign">
                             <Link to='/' className="header__sign-in hidden-mobile">Sign In</Link>
-                            <Link to='/' className="header__sign-up">Sign Up <img src={arrowRight} alt=""
+                            <Link to='/' className="header__sign-up button">Sign Up <img src={arrowRight} alt=""
                                                                                   className="header__sign-icon"/> </Link>
                         </div>
                     </div>
