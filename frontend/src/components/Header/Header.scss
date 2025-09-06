@@ -1,11 +1,11 @@
-@import "../../styles/mixins";
-@import "../../styles/media";
+@use '../../styles/media' as media; // Импортируем media.scss с псевдонимом media
+@use '../../styles/mixins' as mixins; // Импортируем mixins.scss с псевдонимом mixins
 
 .header {
   padding-top: 20px;
 
   &__logo {
-    @include desktop {
+    @include media.desktop {
       width: 100px;
     }
   }
@@ -16,7 +16,7 @@
     align-items: center;
     position: relative;
 
-    @include mobile {
+    @include media.mobile {
       flex-direction: column;
       row-gap: 16px;
     }
@@ -27,29 +27,27 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @include tablet {
+    @include media.tablet {
       left: 40%;
     }
 
-    @include mobile {
+    @include media.mobile {
       left: 50%;
       top: 120%;
     }
-
-
 
     &-list {
       display: flex;
       align-items: center;
       column-gap: 40px;
 
-      @include desktop {
+      @include media.desktop {
         column-gap: 30px;
       }
     }
 
     &-link {
-      @include hover {
+      @include mixins.hover {
         color: var(--color-accent);
       }
     }
@@ -60,11 +58,11 @@
     align-items: center;
     column-gap: 80px;
 
-    @include desktop {
+    @include media.desktop {
       column-gap: 40px;
     }
 
-    @include tablet {
+    @include media.tablet {
       column-gap: 28px;
     }
   }
@@ -74,18 +72,22 @@
     align-items: center;
     column-gap: 32px;
 
-    @include desktop {
+    @include media.desktop {
       column-gap: 24px;
     }
 
-    @include tablet {
+    @include media.tablet {
       column-gap: 16px;
     }
 
     &-in {
-      @include hover {
+      @include mixins.hover {
         color: var(--color-accent);
       }
+    }
+
+    &-up {
+      font-weight: 500;
     }
 
   }

@@ -33,7 +33,7 @@ export default function Hero() {
                             <Link to='/' className="hero__button hero__button-start button">Start Shopping <img
                                 src={start} alt="" width="20" height="20"
                                 className="hero__button-icon"/></Link>
-                            <Link to='/' className="hero__button hero__button-view button button--transparent">View Products <img src={view}
+                            <Link to='/main' className="hero__button hero__button-view button button--transparent">View Products <img src={view}
                                                                                                               alt="" width="20" height="20"
                                                                                                               className="hero__button-icon"/></Link>
                         </div>

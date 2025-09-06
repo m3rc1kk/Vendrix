@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 118px;
+  padding-top: 100px;
 
   @include desktop {
     padding-top: 80px;
@@ -41,7 +41,7 @@
 
   &__title {
     font-size: 128px;
-    font-weight: 600;
+    font-weight: 700;
     max-width: 866px;
     line-height: 1;
 
