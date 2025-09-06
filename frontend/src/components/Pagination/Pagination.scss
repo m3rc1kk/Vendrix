@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  column-gap: 16px;
+  justify-content: end;
+  padding-bottom: 24px;
+
+  @include desktop {
+    justify-content: center;
+  }
+
+  &__button {
+    background: none;
+    border: var(--border-input);
+    border-radius: var(--border-radius-small);
+    padding-inline: 14px;
+    padding-block: 8px;
+
+    @include hover {
+      background-color: var(--color-accent);
+      color: var(--color-white);
+    }
+  }
+}

@@ -23,14 +23,14 @@ export default function ProductCard({ product }) {
 
                             <div className="product-card__comments">
                                 <span className="product-card__comments-text">12К</span>
-                                <img src={comments} alt="" width="14" height="14" className="product-card__comments-icon"/>
+                                <img src={comments} alt="" width="14" height="15" className="product-card__comments-icon"/>
                             </div>
 
                         </div>
 
                         <div className="product-card__price">
                             <span className="product-card__price-now">
-                                {product.price}$
+                                {Math.floor(Number(product.price))}$
                             </span>
                             <span className="product-card__price-old">
                                 123$
